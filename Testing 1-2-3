@@ -1,0 +1,11 @@
+import java.util.*;
+
+public class LineNumbering {
+    public static List<String> number(List<String> lines) {
+        for(int i = 0; i < lines.size(); i++){
+          String sth = lines.get(i);
+          lines.set(i, (Integer.toString(i+1) + ": " + sth));
+        }
+      return lines;
+    }
+}
